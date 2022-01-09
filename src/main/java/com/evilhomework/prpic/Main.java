@@ -1,6 +1,5 @@
 package com.evilhomework.prpic;
 
-import com.evilhomework.prpic.objects.Breed;
 import com.evilhomework.prpic.reports.BreedReport;
 import com.evilhomework.prpic.reports.DogReport;
 import com.evilhomework.prpic.repository.BreedDbParser;
@@ -36,6 +35,7 @@ public class Main {
             commandHandler.getCommand(command);
         } while (!(command.equals("quit")));
 
+        connection.close();
     }
 }
 // comment added by one user

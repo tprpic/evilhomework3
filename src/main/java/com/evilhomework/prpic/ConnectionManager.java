@@ -21,7 +21,7 @@ public class ConnectionManager {
 
         Connection conn = null;
         try {
-            conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/dogs-db", "tprpic", "prpajezakon8");
+            conn = DriverManager.getConnection("jdbc:postgresql://localhost:5432/Dogs", "tprpic", "prpajezakon8");
             System.out.println("Connected to the PostgreSQL server successfully.");
         } catch (SQLException e) {
             System.out.println(e.getMessage());

@@ -2,6 +2,7 @@ package com.evilhomework.prpic;
 
 import com.evilhomework.prpic.api.BreedService;
 import com.evilhomework.prpic.api.DogService;
+import com.evilhomework.prpic.exception.ValidationException;
 import com.evilhomework.prpic.reports.BreedReport;
 import com.evilhomework.prpic.reports.DogReport;
 
@@ -41,7 +42,7 @@ public class CommandHandler {
 
                 if ((dogName.length() < 2 || dogName.length() > 20) || (dogAge <= 0 || dogAge > 40)  || dogBreedID == 0) {
                     System.out.println("Wrong input. add dog 2<=[name]<=20 0<[age]<=40 [breedID]!=0");
-                    break;
+                    throw new ValidationException("Wrong input. add dog 2<=[name]<=20 0<[age]<=40 [breedID]!=0");
                 } else {
                     dogService.addDog(arrCommand[2], dogAge, dogBreedID);
                     System.out.println("Dog has been added to the database.");
