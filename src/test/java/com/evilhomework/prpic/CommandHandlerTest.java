@@ -56,3 +56,5 @@ public class CommandHandlerTest {
         commandHandler.getCommand("add dog a 5 1");
     }
 }
+
+//test za novi branch
