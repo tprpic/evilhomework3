@@ -74,3 +74,4 @@ public class CommandHandlerTest {
 }
 
 //prethodni branch test
+//za commit na novi branch
