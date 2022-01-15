@@ -69,8 +69,6 @@ public class CommandHandlerTest {
         verify(dogService.findDogs());
     }
 
-
-
 }
 
 //prethodni branch test
