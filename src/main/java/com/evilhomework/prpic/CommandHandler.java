@@ -62,6 +62,7 @@ public class CommandHandler {
 
             case "list dogs":
                 System.out.println(dogReport.dogReport(dogService.findDogs()));
+                System.out.println("dogs have been printed");
                 break;
 
             case "list breeds":
@@ -71,7 +72,7 @@ public class CommandHandler {
             case "delete dog":
                 var dogID = Integer.parseInt(arrCommand[2]);
                 dogService.deleteDog(dogID);
-                System.out.println("Dog with ID- " + dogID + " has been deleted.");
+                System.out.println("Dog with ID: " + dogID + " has been deleted.");
                 break;
 
         }
